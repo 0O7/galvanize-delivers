@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     if ($(this).hasClass('pie')) {
-      
+
       let $itemHeading = $("<th>").text("Arugula Pie");
       let $itemPrice = $("<td>").text('$11.99');
       $itemPrice.addClass('text-right');
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $body.empty();
     $('form')[0].reset();
-
+    $('td').text('');
     alert("Order submitted!");
 
 
