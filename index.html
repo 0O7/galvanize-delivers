@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Main Page</title>
-  <link rel="stylesheet" href="/css/materialize.css">
+  <!-- <link rel="stylesheet" href="css/materialize.css"> -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,73 +15,79 @@
 </head>
 
 <body>
-  <div class="dark-blue-color navbar navbar-static-top">
-    <div class="container">
+  <header>
+
+    <div class="dark-blue-color ">
+
       <!-- Top blue line -->
       <div class="row">
-        <header>
-          <div class="col-md-10">
-            <h2><a class="white-text" href="index.html">Galvanize Delivers</a></h2>
-          </div>
-          <div class="col-md-2">
-            <p><a class="white-text" href="order.html">Order Delivery</a></p>
-          </div>
+
+        <div class="col-md-10">
+          <p class="heading"><a class="white-text" href="index.html">Galvanize Delivers</a></p>
+        </div>
+        <div class="col-md-2">
+          <p class="order-del"><a class="white-text" href="order.html">Order Delivery</a></p>
+        </div>
       </div>
-      </header>
+
+
     </div>
-  </div>
-  <!-- // mid-section -->
-  <div class="background-image">
+  </header>
+  <main>
+
+
+    <!-- // mid-section -->
+    <div class="background-image">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12">
+
+            <p style="font-size: 70px;" class="white-text">Fine Dinning, Delivered.</p>
+
+            <a style="background-color:#FF1493; color:white;"href="order.html" class="btn">Place an order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Marketing 3 column -->
     <div class="container">
-      <div class="row">
 
-        <div class="col-md-12">
-
-          <h1 class="white-text">Fine Dinning, Delivered</h1>
-
-          <a href="order.html" class="btn btn-danger">Place an order</a>
+      <div style="padding:40px 0 40px 0" class="row ">
+        <div class="col-md-4">
+          <h3 style="color:#FF1493;"><i class="glyphicon glyphicon-shopping-cart"></i> Shop Online</h3>
+          <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 style="color:#FF1493;"><i class="glyphicon glyphicon-send"></i> Fast Delivery</h3>
+          <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 style="color:#FF1493;"><i class="glyphicon glyphicon-usd"></i>Great Deals</h3>
+          <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Marketing 3 column -->
-  <div class="container">
+    <!-- second last bottom blue line -->
+    <div class="blue-color">
 
-    <div class="row ">
-      <div class="col-md-4">
-        <h3 class="text-danger"><i class="glyphicon glyphicon-shopping-cart"      ></i>Shop Online</h3>
-        <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
-      </div>
-      <div class="col-md-4">
-        <h3 class="text-danger"><i class="glyphicon glyphicon-send"></i>Fast Delivery</h3>
-        <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
-      </div>
-      <div class="col-md-4">
-        <h3 class="text-danger"><i class="glyphicon glyphicon-usd"></i>Great Deals</h3>
-        <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
-      </div>
-    </div>
-  </div>
-  <!-- second last bottom blue line -->
-  <div class="blue-color">
+      <div class="container">
 
-    <div class="container navbar">
-
-      <div class="row">
-        <div class="col-md-6 navbar">
-          <h5 class="white-text">Galvanize Delivers</h5>
-          <h6 class="white-text">Fine Dining, Delivered.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 id="GD"class="white-text">Galvanize Delivers</h3>
+            <h6 class="white-text">Fine Dining, Delivered.</h6>
         </div>
 
-        <ul class="col-md-4 col-md-offset-2 list-unstyled">
+        <ul id="info"class="col-md-4 col-md-offset-2 list-unstyled">
           <li><a href="index.html"  class="white-text">Home</a></li>
-          <li ><a href="order.html" class="white-text">Delivery</a></li>
+          <li ><a href="order.html" class="white-text">Order Delivery</a></li>
         </ul>
 
       </div>
     </div>
   </div>
-</body>
+</main>
 
   <!-- Footer copyright -->
 
@@ -91,7 +97,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <p class="white-text">&copy;2016 Galvanize Delivers</p>
+            <p id="trademark"class="white-text">&copy;2016 Galvanize Delivers</p>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Main Page</title>
 
-  <link rel="stylesheet" href="/css/materialize.css">
+  <!-- <link rel="stylesheet" href="css/materialize.css"> -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,185 +18,204 @@
 </head>
 
 <body>
-  <div class="dark-blue-color navbar navbar-static-top">
-    <div class="container">
+  <header>
+
+    <div class="dark-blue-color">
+      <!-- <div class="container"> -->
       <!-- Top blue line -->
       <div class="row">
-        <header>
-          <div class="col-md-10">
-            <h2><a class="white-text" href="index.html">Galvanize Delivers</a></h2>
-          </div>
-          <div class="col-md-2">
-            <p><a class="white-text" href="order.html">Order Delivery</a></p>
-          </div>
-      </div>
-      </header>
-    </div>
-  </div>
-  <!-- // food-headings -->
-  <div class="container">
 
-    <div class="row">
+        <div class="col-md-10">
+          <p class="heading"><a class="white-text" href="index.html">Galvanize Delivers</a></p>
+        </div>
+        <div class="col-md-2">
+          <p class="order-del"><a class="white-text" href="order.html">Order Delivery</a></p>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </header>
+
+  <main>
+
+
+    <!-- // food-headings -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <h3>Menu</h3>
+        </div>
+
+
+        <div class="col-md-6">
+          <h3>Order</h3>
+        </div>
+      </div>
+
+      <!--Food item-->
       <div class="col-md-6">
 
-        <h3>Menu</h3>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/burger.jpg" alt="...">
+              <div class="caption">
+                <h4>Royale with Cheese</h4>
+                <p>$8.99</p>
+                <hr>
+                <p><a href="#" style="color:#FF1493; padding:0 0 0 0;"class="btn cheese" role="button">ADD TO ORDER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/pizza.jpg" alt="...">
+              <div class="caption">
+                <h4>Arugula Pie</h4>
+                <p>$11.99</p>
+                <hr>
+                <p><a href="#"style="color:#FF1493;padding:0 0 0 0;" class="btn pie" role="button">ADD TO ORDER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- order thumbnails -->
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/ribs.jpg" alt="...">
+              <div class="caption">
+                <h4>Smoked Swine</h4>
+                <p>$14.99</p>
+                <hr>
+                <p><a href="#" style="color:#FF1493;padding:0 0 0 0;"class="btn ribs" role="button">ADD TO ORDER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/ice_cream.jpg" alt="...">
+              <div class="caption">
+                <h4>Ice Cream Biscut</h4>
+                <p>$7.99</p>
+                <hr>
+                <p><a href="#" style="color:#FF1493;padding:0 0 0 0;"class="btn icecream" role="button">ADD TO ORDER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
 
 
       <div class="col-md-6">
-        <h3>Order</h3>
-      </div>
-    </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class="text-right">Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <th class="text-right">Subtotal</th>
+              <td class="text-right" id="subtotal"></td>
+            </tr>
+            <tr>
+              <th class="text-right">Tax</th>
+              <td class="text-right" id="tax"></td>
+            </tr>
+            <tr>
+              <th class="text-right">Total</th>
+              <td class="text-right" id="total"></td>
+            </tr>
 
-    <!--Food item-->
-    <div class="col-md-6">
+          </tfoot>
+        </table>
+
+        <!-- Order screen -->
 
 
-      <div class="row">
-        <div class="col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/burger.jpg" alt="...">
-            <div class="caption">
-              <h4>Royale with Cheese</h4>
-              <p>$8.99</p>
-              <p><a href="#" class="btn cheese" role="button">Add to order</a>
-            </div>
+
+
+        <form>
+          <div style="padding-left:20px;"class="row">
+            <label class="lbl">Name</label>
+            <br>
+            <i id="image" class="glyphicon glyphicon-user">  <input type="text" size='38' id="name"></i>
+
+
           </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/pizza.jpg" alt="...">
-            <div class="caption">
-              <h4>Arugula Pie</h4>
-              <p>$11.99</p>
-              <p><a href="#" class="btn pie" role="button">Add to order</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- order thumbnails -->
-      <div class="row">
-        <div class="col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/ribs.jpg" alt="...">
-            <div class="caption">
-              <h4>Smoked Swine</h4>
-              <p>$14.99</p>
-              <p><a href="#" class="btn ribs" role="button">Add to order</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="thumbnail">
-            <img src="/Users/pingliao/Projects/Week03/galvanize-delivers-master/img/ice_cream.jpg" alt="...">
-            <div class="caption">
-              <h4>Ice Cream Biscut</h4>
-              <p>$7.99</p>
-              <p><a href="#" class="btn icecream" role="button">Add to order</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-    <div class="col-md-6">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th class="text-right">Price</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-        <tfoot>
-          <tr>
-            <th class="text-right">Subtotal</th>
-            <td class="text-right" id="subtotal"></td>
-          </tr>
-          <tr>
-            <th class="text-right">Tax</th>
-            <td class="text-right" id="tax"></td>
-          </tr>
-          <tr>
-            <th class="text-right">Total</th>
-            <td class="text-right" id="total"></td>
-          </tr>
-
-        </tfoot>
-      </table>
-
-      <!-- Order screen -->
-
-
-      <form>
-        <div class="row">
-
-          <i class="glyphicon glyphicon-user">Name</i>
-
           <br>
-          <input type="text" id="name">
-
-        </div>
-        <br>
-        <div class="row">
-          <i class="glyphicon glyphicon-earphone">Phone number</i>
-
           <br>
-          <input type="number" id="number">
+          <div style="padding-left:20px;"class="row">
+            <label class="lbl">Phone number</label>
+            <br>
+            <i id="image"class="glyphicon glyphicon-earphone">  <input type="number" style='width:19em' id="number"></i>
 
-        </div>
-        <br>
-        <div class="row">
 
-          <i class="glyphicon glyphicon-equalizer">Address</i>
+          </div>
           <br>
-          <textarea id="address" rows="2" cols="19"></textarea>
+          <br>
+          <div style="padding-left:20px;" class="row">
+            <label class="lbl">Address</label>
+            <br>
+            <i id="image" class="glyphicon glyphicon-equalizer">  <textarea id="address" cols='36'rows="2" cols="19"></textarea></i>
 
-        </div>
-        <div class="row">
-          <button type="button" class="btn submit btn-danger">Submit order</button>
-        </div>
-      </form>
-    </div>
-  </div>
 
-  <!-- second last bottom blue line -->
-  <div class="blue-color">
+          </div>
 
-    <div class="container navbar">
 
-      <div class="row">
-        <div class="col-md-6 navbar">
-          <h5 class="white-text">Galvanize Delivers</h5>
-          <h6 class="white-text">Fine Dining, Delivered.</p>
-        </div>
+          <div class="row text-center">
 
-        <ul class="col-md-4 col-md-offset-2 list-unstyled">
-          <li><a href="index.html"  class="white-text">Home</a></li>
-          <li ><a href="order.html" class="white-text">Delivery</a></li>
-        </ul>
+
+            <button type="button" id='placeOrder' style="background-color:#FF1493; color:white;" class="btn">Place order</button>
+          </div>
+        </form>
 
       </div>
     </div>
-  </div>
+
+    <!-- second last bottom blue line -->
+    <div class="blue-color">
+
+      <div class="container ">
+
+        <div class="row">
+          <div class="col-md-6 ">
+            <h3 id="GD" class="white-text">Galvanize Delivers</h3>
+            <h6 class="white-text">Fine Dining, Delivered.</h6>
+          </div>
+
+          <ul id="info" class="col-md-4 col-md-offset-2 list-unstyled">
+            <li><a href="index.html" class="white-text">Home</a></li>
+            <li><a href="order.html" class="white-text">Order Delivery</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer copyright -->
+  <footer class="dark-blue-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p id='trademark' class="white-text">&copy;2016 Galvanize Delivers</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
-  <!-- Footer copyright -->
 
 
-    <footer class="dark-blue-color">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <p class="white-text">&copy;2016 Galvanize Delivers</p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
 </html>
